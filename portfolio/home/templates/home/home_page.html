@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% load wagtailcore_tags %}
+
+{% block body_class %}template-homepage{% endblock %}
+
+{% block content %}
+
+<h1>Welcome to {{ self.get_site.site_name }}</h1>
+{{ page.site_description|richtext }}
+
+{% endblock content %}
+
+{% block extra_js %}
+
+<script src='https://jeromeetienne.github.io/threex.terrain/examples/vendor/three.js/build/three-min.js'></script>
+<script src='https://jeromeetienne.github.io/threex.terrain/examples/vendor/three.js/examples/js/SimplexNoise.js'></script>
+<script src='https://jeromeetienne.github.io/threex.terrain/threex.terrain.js'></script>
+<script type="text/javascript" src="{% static 'js/footer.js' %}"></script>
+
+{% endblock extra_js %}

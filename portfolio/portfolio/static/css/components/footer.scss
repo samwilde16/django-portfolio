@@ -1,0 +1,70 @@
+html,body {
+        margin:0;
+        padding:0;
+}
+
+.footer {
+    width:100%;
+    position:fixed;
+    border-top:1px solid #aaa;
+    bottom:-120px;
+    background-color:#fff;
+    height:155px;
+    transition:all 0.2s ease;
+    -webkit-transition:all 0.2s ease;
+}
+
+.footer:hover {
+    bottom:0;
+}
+
+.footer h6 {
+    color:#000;
+    margin:0;
+    float:left;
+    width:100%;
+    padding: 5px 0 10px 0;
+    text-align:center;
+}
+
+.footer .contact {
+    float:left;
+    width:45%;
+    margin:0 1% 0 4%;  
+}
+
+.footer .contact a {
+    text-decoration:none;
+    color:#555;
+}
+
+.footer .contact a:hover {
+    text-decoration:underline;
+    color:#000;
+}
+
+.footer .social {
+    float:right;
+    width:45%;
+    margin:0px 4% 0px 1%;  
+}
+
+.footer .social a {
+    float:right;
+    width:45px;
+    margin-top:20px;
+    margin-left:15px;
+    transition:all 0.2s ease;
+    -webkit-transition:all 0.2s ease;
+}
+
+.footer .social a:hover {
+    -ms-transform: scale(0.9, 0.9); /* IE 9 */
+    -webkit-transform: scale(0.9, 0.9); /* Safari */
+    transform: scale(0.9, 0.9);
+}
+
+.footer .social a img {
+    width:100%;
+    float:left;
+}
